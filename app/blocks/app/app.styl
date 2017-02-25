@@ -1,0 +1,45 @@
+.app
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+
+  &__left-column
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    width: $left-column-width-opened
+    background-color $color-panel
+    transition: all .15s ease
+
+    &.closed
+      width: $left-column-width-closed
+
+  &__middle-column
+    position: relative
+    background-color $color-background
+    margin-left $left-column-width-closed
+    margin-right $right-column-width-closed
+    height: 100%
+    transition: all .15s ease
+
+    &.left-column-opened
+      margin-left $left-column-width-opened
+
+    &.right-column-opened
+      margin-right $right-column-width-opened
+
+  &__right-column
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    width: $right-column-width-opened
+    background-color $color-panel
+    transition: all .15s ease
+    overflow hidden
+
+    &.closed
+      width: $right-column-width-closed

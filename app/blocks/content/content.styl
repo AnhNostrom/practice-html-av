@@ -1,0 +1,55 @@
+.content
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index 1
+
+  &__header
+    background-color $color-card
+    padding-left $slide-button-width
+    padding-right $slide-button-width
+    //
+    //ul
+    //  a
+    //    color: #000
+
+  &__card
+    margin-left $slide-button-width
+    margin-right $slide-button-width
+
+  &__avatar
+    width $header-height
+    line-height 0px
+
+  &__title
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+
+    h1
+      font-size 1.2em
+      margin 0
+      text-overflow ellipsis
+      white-space nowrap
+      overflow hidden
+      line-height $header-height
+
+  &__season-selector
+    width 200px
+    padding-left: 8px !important
+    padding-right: 8px !important
+
+    .select-wrapper
+      top 4px
+
+  &__favorite-button
+    width 36px
+
+    .btn
+      padding 0
+      width: 36px
+      background-color red
